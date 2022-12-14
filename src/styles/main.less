@@ -1,8 +1,18 @@
+@fontePrincipal: Roboto, sans-serif;
+@fonteDoTitulo: Lobster, cursive;
+@corDoTexto: #fff;
+@corDeFundo: #eb3b5a;
+@corDoTextoDoBotao: #000;
+@corDoFundoDoBotao: #f7b731;
+
 body {
-    background-color: aqua;
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal;
+    color: @corDoTexto;
 }
 
 h1 {
+    font-family: @fonteDoTitulo;
     font-size: 3em;
 }
 
@@ -21,8 +31,9 @@ button {
     font-size: 1.3em;
     margin-top: 16px;
     border-radius: 8px;
-    background-color: yellow;
-    color: black;
+    background-color: @corDoFundoDoBotao;
+    color: @corDoTextoDoBotao;
+    font-family: @fontePrincipal;
 }
 
 input {
@@ -35,8 +46,7 @@ input {
     text-align: center;
     color: #fff;
     border-bottom: 6px solid #fff;
-
-}
+} 
 
 .resultado {
     padding: 16px;
